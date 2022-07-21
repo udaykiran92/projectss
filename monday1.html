@@ -1,0 +1,15 @@
+<html ng-app="moduleName">
+<head> 
+<title>My first AngularJS code</title>
+<Script SRC="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></Script>
+<script> 
+var app = angular.module("moduleName",[]);
+var myController = function($scope)	{
+	$scope.yourProperty = 'This is from controller';
+}
+</script>
+</head>
+<body>
+<h1 ng-controller="myController">Message from controller  {{  yourProperty  }}</h1>
+</body>
+</html>

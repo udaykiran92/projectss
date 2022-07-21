@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+</script>
+
+<html>
+  
+   <body>
+      <h1>Scientist information</h1>
+      
+      <div ng-app = "" ng-init = "quantity = 22;cost = 30; 
+         scientist = {firstname:'Abdul',lastname:'kalam',rollno:1001};
+         inventions = [80,90,75,73,60]">
+         <p>Hello {{scientist.firstname + ""+ scientist.lastname}}!</p>
+         <p>Books  he published: {{cost * quantity}} Rs</p>
+         <p>Roll No: {{scientist.rollno}}</p>
+         <p>inventions(chemistry): {{inventions[3]}}</p>
+         <p>scintist inventions are: <span ng-bind="inventions"></span>  </p>
+      </div>
+      
+     
+   </body>
+</html>

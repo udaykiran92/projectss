@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Modules and Controllers in Files
+	</title>	
+</head>
+
+<body ng-app="DemoApp">
+	<h1>
+		Using controllers in Module
+	</h1>
+	
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+	
+	<script src="wed1.js"></script>
+	
+	
+	<div ng-app="DemoApp" ng-controller="DemoController">
+		Vowels List : <button ng-click="ch('A')" >A</button>
+		
+		<button ng-click="ch('E')" >E</button>
+		<button ng-click="ch('I')" >I</button>
+		<button ng-click="ch('O')" >O</button>
+		<button ng-click="ch('U')" >U</button>
+		
+		<p>{{ choice }}</p>
+	
+		Vowels List :
+		<select ng-options="option for option in list"
+			ng-model="mychoice" ng-change="c()">
+		</select>
+		
+		<p>{{ choice }}</p>
+	</div>
+</body>
+
+</html>

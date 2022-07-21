@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <body >
+        <div ng-app="hello" ng-controller="hai">
+               Price :<input type="text" ng-modael="price" placeholder="typehere"><br><br>
+               Quantity:<input type="text" ng-model="quantity" placeholder="typehere"><br><br>
+               Total is:{{ (price * quantity) }}
+          </div>
+   <script>
+  var app=angular.module('hello',[]);
+ app.controller('hai', function($scope){
+ $scope.price=100;
+ $scope.quantity=5;
+
+ })
+   </script>
+    </body>
+</html>
